@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Length Limit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+<body>
+
+<div class="container jumbotron">
+    <label>Enter Password</label>
+    <input id="password" type="password" class="form-control">
+    <button onclick="pass()" class="mt-4 btn btn-success btn-lg">Check password</button>
+
+</div>
+     <script>
+     function pass() {
+
+
+            var password = $('#password').val();
+            if (password.length > 15) {
+                alert('That password is too long.');
+            }
+     }
+     </script>
+</body>
+</html>
